@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robertaflix</title>
+    <style>
+        /* Estilo Global */
+        body {
+            font-family: 'Chakra Petch', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2b2d42, #8d1d9f);
+            color: #ffffff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Estilo do Header */
+        header {
+            background: linear-gradient(90deg, #ff007f, #ff6f00);
+            padding: 20px 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Estilo da Seção Chamada */
+        .chamada {
+            padding: 40px 0;
+            background: rgba(0, 0, 0, 0.7);
+            border-bottom: 2px solid #ff007f;
+        }
+
+        .chamada-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .chamada-texto h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #fffc00;
+        }
+
+        .chamada-texto p {
+            font-size: 1.8rem;
+            color: #ff91a1;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .chamada-video iframe {
+            border-radius: 15px;
+            width: 100%;
+            max-width: 640px;
+            height: 360px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .chamada-video iframe:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.9);
+        }
+
+        /* Estilo da Seção Categoria */
+        .categoria {
+            padding: 40px 0;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .categoria h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #fffc00;
+            font-weight: 600;
+        }
+
+        .categoria-videos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .categoria-videos a {
+            flex-basis: calc(20% - 20px);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid #ff007f;
+        }
+
+        .categoria-videos a:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.8);
+        }
+
+        .categoria-videos img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transition: opacity 0.3s;
+        }
+
+        .categoria-videos img:hover {
+            opacity: 0.85;
+        }
+
+        /* Estilo Responsivo */
+        @media (max-width: 1024px) {
+            .categoria-videos a {
+                flex-basis: calc(25% - 20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .categoria-videos a {
+                flex-basis: calc(33.33% - 20px);
+            }
+
+            .chamada-texto h2 {
+                font-size: 2.8rem;
+            }
+
+            .chamada-texto p {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .categoria-videos a {
+                flex-basis: 100%;
+            }
+
+            .chamada-texto h2 {
+                font-size: 2.2rem;
+            }
+
+            .chamada-texto p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Robertaflix</h1>
+        </div>
+    </header>
+
+    <section class="chamada">
+        <div class="container chamada-content">
+            <div class="chamada-texto">
+                <h2>ATRAVÉS DO ARANHAVERSO</h2>
+                <p>homem-aranha</p>
+            </div>
+            <div class="chamada-video">
+                <iframe src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="categoria">
+        <div class="container">
+            <h2>Filmes e Séries</h2>
+            <div class="categoria-videos">
+                <a href="https://youtu.be/Z8A6Z_VurvM?si=8AwHegHW3LR_B74A">
+                    <img src="https://img.youtube.com/vi/Z8A6Z_VurvM/maxresdefault.jpg" alt="Vídeo 1"/>
+                </a>
+                <a href="https://youtu.be/qfSNCAecgkY?si=ZtTSheCxj48KG-UB">
+                    <img src="https://img.youtube.com/vi/qfSNCAecgkY/maxresdefault.jpg" alt="Vídeo 2"/>
+                </a>
+                <a href="https://youtu.be/hHz7MOxNwqE?si=mgeM_rSjv-wa-Y4f">
+                    <img src="https://img.youtube.com/vi/hHz7MOxNwqE/maxresdefault.jpg" alt="Vídeo 3"/>
+                </a>
+                <a href="https://youtu.be/niS_tlwkSDc?si=M9TrGHwxffMuzDr9">
+                    <img src="https://img.youtube.com/vi/niS_tlwkSDc/maxresdefault.jpg" alt="Vídeo 4"/>
+                </a>
+                <a href="https://youtu.be/sfT6vlvj7CY?si=X5oKC-ieP3aj-7an">
+                    <img src="https://img.youtube.com/vi/sfT6vlvj7CY/maxresdefault.jpg" alt="Vídeo 5"/>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
